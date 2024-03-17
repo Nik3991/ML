@@ -72,7 +72,7 @@ class Video(File):
         return self._fps
 
 
-class RemoveVideo(Video):
+class RemoteVideo(Video):
     def __init__(self,
                  url: str,
                  path_to_save: str,
@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
     print("------------------")
 
-    rv = RemoveVideo("youtube",
+    rv = RemoteVideo("youtube",
                      "incorrect_path",
                      "name_surname",
                      "15.03.2024",
