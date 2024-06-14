@@ -11,7 +11,7 @@ def task1():
     l = len(value)
 
     if l > 2:
-        mid = l / 2
+        mid = l // 2
         tmp = value[mid - 1]
         value[mid - 1] = value[mid + 1]
         value[mid + 1] = tmp
@@ -32,7 +32,7 @@ def task1():
 
 def task2():
     print('_____homework_1_task_2_____')
-    days = input()
+    days = int(input())
     if days <= 5:
         print(0)
     else:
@@ -49,11 +49,10 @@ def task2():
 
 def task3():
     print('_____homework_1_task_3_____')
-    h = input()
-    w = input()
-    r = input()
+    h = int(input())
+    w = int(input())
+    r = int(input())
     print(h * w >= r and (r % h == 0 or r % w == 0))    
-
 
 
 #4. Пользователь вводит целое положительное число,
@@ -68,7 +67,7 @@ roman_numbers = [('M', 1000), ('CM', 900), ('D', 500), ('CD', 400),
 
 def task4():
     print('_____homework_1_task_4_____')
-    num = input()
+    num = int(input())
     result = ''
     for (key, value) in roman_numbers:
         while num >= value:
@@ -92,7 +91,7 @@ digits = {'0','1','2','3','4','5','6','7','8','9'}
 
 def task5():
     print('_____homework_1_task_5_____')
-    value = raw_input()
+    value = input()
     dots = 0
     result = True
     for c in value:
